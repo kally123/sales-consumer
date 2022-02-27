@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "4f297e46-2927-417a-a2f0-5bd0bd5afece",
+		"name": "Sales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sales-consumer/upload/?fileNames=SaleObjects.xml,SaleObjects.json,SaleObjects.csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sales-consumer",
+						"upload",
+						""
+					],
+					"query": [
+						{
+							"key": "fileNames",
+							"value": "SaleObjects.xml,SaleObjects.json,SaleObjects.csv"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
